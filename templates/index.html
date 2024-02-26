@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>House Price prediction</title>    
+    <link rel='stylesheet' type='text/css' media='screen' href="{{ url_for('static', filename='css/style.css') }}">             
+</head>
+<body>
+    
+    {% extends 'base.html' %}
+    {% block content %}
+    <h1 style="text-align: center;">🅷🅾🆄🆂🅴 </br>
+        🅿🆁🅸🅲🅴 🅿🆁🅴🅳🅸🅲🆃🅸🅾🅽</h1>
+    <div class="reg">
+        {% include 'message.html' %}
+        <div class="form">
+            
+            <form action="{{url_for('predictions')}}" method="POST">
+                BEDROOMS : <input type="number" name='bedrooms' placeholder="Enter the no of Bedrooms"><br></br>
+                BATHROOMS : <input type="number" name='bathrooms' placeholder="Enter the no of Bathrooms"><br></br>
+                FLOORS : <input type="number" name='floors' placeholder="Enter the no of Floors"><br></br>
+                YEAR OF BUILD : <input type="number" name='yr_built' placeholder="Enter year of Build"><br></br>
+                <div class = submit>
+                    <input type="submit" value = 'PREDICT' ></br></br>
+                </div>
+                <h3 style= "text-align: center" >Predicted Price <input name="number" style = "text-align: center" value=₹_{{data}}></h3>
+
+            </form> 
+            
+        </div>
+        
+    </div>
+    {% endblock %}
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+
+h3{
+    color: rgb(29, 244, 162);
+}
+body{
+    background-image: url('../images/hs1.jpg');
+    background-size: cover; 
+}
+.submit :hover {
+    background-color: rgb(128, 128, 125);
+    transition: background-color 0.5s;
+    color: rgb(255, 115, 0);
+    
+  }
+.form{
+    position: relative;
+    z-index: 1;
+    background: #a3a3a3;
+    max-width: 360px;
+    margin:auto;
+    padding: 45px;
+}
+
+.reg{
+    width: 360px;
+    margin: auto;
+}
+.form input{
+    background: #f9f9f9;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+img {
+ 
+    width: 30px;
+     
+    height: 30px;
+     
+    }
